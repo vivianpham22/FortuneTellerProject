@@ -27,7 +27,7 @@ namespace FortuneTellerProject
             int siblings = int.Parse(Console.ReadLine());
 
             Console.WriteLine("What is your favorite color using ROYGBIV? \nIf you do not know what ROYGBIV is enter HELP.");
-            string color = (Console.ReadLine());
+            string color = Console.ReadLine();
 
 
 
@@ -44,7 +44,7 @@ namespace FortuneTellerProject
 
             int retireAge;
             int eoAge = age % 2;
-            Console.WriteLine(eoAge);
+            //Console.WriteLine(eoAge);
 
             if (age % 2 == 0)
             {
@@ -56,45 +56,38 @@ namespace FortuneTellerProject
             }
 
             //Sibilings & Location
-            string zeroKid = "San Diego";
-            string oneKid = "Miami";
-            string twoKid = "Alaska";
-            string threeKid = "Mexico"; //greater than
-            string formKid = "Michigan";
-            string underZero = "Little Box";
-
-
-
+            string home;
 
 
             if (siblings == 0)
             {
-                zeroKid = "San Diego";
+                home = "San Diego";
             }
             else if (siblings == 1)
             {
-                oneKid = "Miami";
+                home = "Miami";
             }
             else if (siblings == 2)
             {
-                twoKid = "Alaska";
+                home = "Alaska";
             }
             else if (siblings == 3)
             {
-                threeKid = "Mexico";
+                home = "Mexico";
             }
             else if (siblings > 3)
             {
-                formKid = "Michigan";
+                home = "Michigan";
             }
             else
             {
-                underZero = "Little Box";
-
+                home = "Little Box";
+            }
+             
 
             //Transportation 
 
-                String transportation;
+                string transportation="";
 
                 if (color == "red")
                 {
@@ -123,10 +116,11 @@ namespace FortuneTellerProject
                 else if (color == "violet")
                 {
                     transportation = "scooter";
+                }
+               
 
-
-                    // Bank Account 
-                    string bankaccount;
+                // Bank Account 
+                string bankaccount="";
 
                     if (month >= 1 && month <= 4)
                     {
@@ -140,25 +134,22 @@ namespace FortuneTellerProject
                     {
                         bankaccount = "$200";
                     }
-                    else 
-                 
-
-
-
-
-
-
-
-
+                    else
                     {
-
-                        {
-
-                        }
+                        bankaccount = "$0";
                     }
-                }
 
-            }
+
+         Console.WriteLine("{0} {1} will retire at {2} years old with {3} in the bank, a vacation home in {4} and {5}", firstName, secondName, retireAge, bankaccount, home, transportation);
+        
+
+
+
+
+
+          
+
+            
         }
     }
 }
