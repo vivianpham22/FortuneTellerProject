@@ -12,6 +12,7 @@ namespace FortuneTellerProject
         {
             Console.WriteLine("Welcome to your Fortune Teller");
 
+
             Console.WriteLine("Please enter your first name");
             string firstName = (Console.ReadLine());
             Console.WriteLine("Please enter last name");
@@ -140,16 +141,35 @@ namespace FortuneTellerProject
                     }
 
 
-         Console.WriteLine("{0} {1} will retire at {2} years old with {3} in the bank, a vacation home in {4} and {5}", firstName, secondName, retireAge, bankaccount, home, transportation);
-        
+         Console.WriteLine("{0} {1} will retire at {2} years old with {3} in the bank, a vacation home in {4} and a {5}", firstName, secondName, retireAge, bankaccount, home, transportation);
+
+
+
+
+            ////QUITTING
+
+            //Console.WriteLine("You may quit anytime by typing in QUIT");
+            //int exit = int.Parse(Console.ReadLine());
+
+            //if (Environment.Exit(int.exit);
+             
+            //    {
+            //    Environment.Exit(0);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Nobody likes a quitter......");
+            //        int exit = (Console.ReadLine);
+
+           
+            //    }
 
 
 
 
 
-          
 
-            
+            }
+            }
         }
-    }
 }
